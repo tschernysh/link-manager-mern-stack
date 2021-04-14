@@ -1,5 +1,5 @@
 import {Switch, Route, Redirect} from 'react-router-dom'
-import Auth from './Auth'
+import Auth from './Auth/Auth'
 import CreateLink from './CreateLink'
 import Detail from './Detail'
 import Links from './Links'
