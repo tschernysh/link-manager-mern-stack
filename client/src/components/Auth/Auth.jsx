@@ -36,9 +36,9 @@ const Auth = (props) => {
                 <input type="text"/>
             </div>
 
-            <div className="btns">
-                <button disabled={isFetching} onClick={ (e) => changeAction(e.target.innerHTML) } >Login</button>
-                <button disabled={isFetching} onClick={ (e) => changeAction(e.target.innerHTML) } >New user</button>
+            <div className={s.btns}>
+                <button className={currentAction === 'LOGIN' ? s.active: null} disabled={isFetching} onClick={ (e) => changeAction(e.target.innerHTML) } >Login</button>
+                <button className={currentAction === 'REGISTRATION' ? s.active: null} disabled={isFetching} onClick={ (e) => changeAction(e.target.innerHTML) } >New user</button>
             </div>
         </div>
     )

@@ -3,15 +3,35 @@
     height: 50%;
     margin:  0 auto;
     text-align: center; 
+    box-shadow: -20px -20px 50px #ffcccc inset, -20px -20px 50px #ffcccc ;
+    border-radius: 20px;
+    padding: 50px 100px;
+
 }
 .auth h1{
     border-radius: 5px;
+    width: 50%;
+    margin: 50px auto 0;
 }
 .inputs{
     display: flex;
     flex-direction: column;
-    width: 50%;
-    margin: 0 auto;
+    width: 40%;
+    margin: 20px auto;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+.inputs input{
+    margin: 5px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+.inputs input:focus{
+    box-shadow: 0 0 5px #ffb8b8 ;
+    border: 1px solid #ffb8b8;
 }
 .fetching{
     animation: fetching 2s ease 1;
@@ -19,7 +39,27 @@
 }
 @keyframes fetching {
     50%{
-        box-shadow: inset 100px 0 100px 50px rgb(54, 0, 248);
-        color: rgb(54, 0, 248);
+        box-shadow: inset 550px 0 100px -150px #ffcccc;
+        color: #ffcccc;
     }
+}
+button{
+    border: none;
+    transition: all 0.5s;
+    border-radius: 3px;
+    margin: 10px;
+    outline: none;
+    cursor: pointer;
+    font-size: 16px;
+    border: 1px solid gray;
+    
+}
+button:hover{
+    box-shadow: 0 0 5px #ffcccc;
+}
+.active{
+    background-color: #ffcccc;
+}
+.active:hover{
+    background-color: #ffcccc;
 }

@@ -8,6 +8,8 @@
     margin-top: 100px;
     border-radius: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5) ;
+    display: flex;
+    align-items: center;
 }
 .gradient{
     top: 0;
@@ -15,15 +17,15 @@
     position: fixed;
     width: 100vw;
     height: 100vh;
-    box-shadow: 0 500px 500px -200px rgb(70, 14, 201)  inset,
-                0 1000px 500px -200px rgb(38, 0, 128)  inset,
-                0 1500px 500px -200px rgb(25, 2, 68)  inset;
+    box-shadow: 0 500px 500px -200px #cd84f1  inset,
+                0 1000px 500px -200px #7d5fff inset,
+                0 1500px 500px -200px #7158e2 inset;
     animation: gradient 20s ease infinite;
 }
 @keyframes gradient{
     50%{
-        box-shadow: 0 500px 500px -200px rgb(202, 238, 2)  inset,
-                0 1000px 500px -200px rgb(202, 132, 2)  inset,
-                0 1500px 500px -200px rgb(224, 124, 10)  inset;
+        box-shadow: 0 500px 500px -200px #fff200 inset,
+                0 1000px 500px -200px #ffaf40  inset,
+                0 1500px 500px -200px #ff9f1a  inset;
     }
 }
