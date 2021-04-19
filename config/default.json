@@ -1,5 +1,5 @@
 {
     "port": 5000,
-    "jwtSecret": "roman web maste",
+    "jwtSecret": "romanWebmaster",
     "mongoUri": "mongodb+srv://tschernysh:mongoTop@cluster0.53oja.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }

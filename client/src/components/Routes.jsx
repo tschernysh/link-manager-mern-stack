@@ -4,8 +4,8 @@ import CreateLink from './CreateLink'
 import Detail from './Detail'
 import Links from './Links'
 
-export const useRoutes = isAuth => {
-    if(isAuth){
+export default (props) => {
+    if(props.isAuth){
         return(
             <Switch>
                 <Route path="/links" exact>
