@@ -20,7 +20,7 @@ function App() {
     <AuthContext.Provider value={{token, userId, login, logout, isAuth}}>
       <AlertContext.Provider value={{setAppError, setAppOk}}>
         <BrowserRouter>
-          <div className={`${s.gradient} ${appError ? s.error_gradient : appOk ? s.good_gradient : s.ok_gradient}`}></div>
+          <div className={`${s.gradient} ${appError ? s.error_gradient : appOk ? s.good_gradient : s.ok_gradient}`}/>
           <div className={s.message_log} >{appError ? appError : appOk ? appOk : null}</div>
           <div className={s.container}>
             {isAuth ? <Navbar /> : null}

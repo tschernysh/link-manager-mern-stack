@@ -38,7 +38,7 @@ const Auth = (props) => {
             else if (e === 'New user' && currentAction === 'REGISTRATION') {
                 registerHandler()
             }
-            
+
         setTimeout(() => {
             setIsFetching(false)
         }, 2000);
@@ -90,7 +90,7 @@ const Auth = (props) => {
             <h1 className={isFetching ? s.fetching : null} >{currentAction}</h1>
 
             <div className={s.inputs}>
-                <input autoComplete='off' value={forms.email} placeholder='Enter email' onChange={formsHandler} name='email' type="email" />
+                <input autoFocus={true} autoComplete='off' value={forms.email} placeholder='Enter email' onChange={formsHandler} name='email' type="email" />
                 <input value={forms.password} placeholder='Enter password' onChange={formsHandler} name='password' type="password" />
             </div>
 

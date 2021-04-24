@@ -7,6 +7,7 @@ app.use(express.json({extended: true}))
 
 //auth router
 app.use('/api/auth', require('./routes/auth.routes'))
+app.use('/api/link', require('./routes/link.routes'))
 
 const PORT = config.get('port')
 
@@ -16,7 +17,7 @@ async function start() {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useCreateIndex: true
-        }) 
+        })
         app.listen(PORT, () => console.log(`app started on port: ${PORT}`))
     }catch(e){
         console.log('Server error', e.message);

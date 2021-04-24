@@ -14,15 +14,9 @@ export default() => {
 
     return(
         <div className={s.navbar}>
-            <div className="navbar_btn">
-                <NavLink to='/create' activeClassName={s.active}>Create</NavLink>
-            </div>
-            <div className="navbar_btn">
-                <NavLink to='/links' activeClassName={s.active}>Links</NavLink>
-            </div>
-            <div className="navbar_btn">
-                <a onClick={logoutHandler}>Logout</a>
-            </div>
+            <NavLink to='/create' className={s.navbar_btn} activeClassName={s.active}>Create</NavLink>
+            <NavLink to='/links' className={s.navbar_btn} activeClassName={s.active}>Links</NavLink>
+            <a className={s.navbar_btn } onClick={logoutHandler}>Logout</a>
         </div>
     )
 }
